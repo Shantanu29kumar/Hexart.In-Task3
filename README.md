@@ -1,1 +1,1 @@
-# Stress_Detection_and_Prediction
+## Stress is becoming an increasingly significant factor in a person's life today. According to the World Health Organization, stress is a type of mental illness that affects the health of citizens. There is no one in the world who does not suffer from stress or depression. Everyone experiences some amount of stress. Stress is a major symptom of mental health. Stress affects every aspect of a person's life, including emotions, thoughts, and behaviors. This model presents a study of stress detection based on machine learning. 
