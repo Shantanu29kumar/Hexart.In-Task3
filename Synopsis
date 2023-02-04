@@ -1,0 +1,52 @@
+**Problem Statement**: Stress Detection with Machine Learning. Based on live human vitals, predict the stress levels of humans.
+
+Stress detection and prediction involve identifying and predicting instances of stress in individuals. 
+Machine learning algorithms and artificial intelligence can be used to analyze this data and predict an individual's stress levels. 
+
+The model was trained using a dataset of 630 individuals. This made the model predict outcomes with an accuracy of more than 75%.
+The attributes in the dataset include snoring range, respiration rate, body temperature, limb movement rate, blood oxygen levels, 
+eye movement, number of hours of sleep, heart rate, and stress levels. 
+
+After extracting the data we then calculate the correlation between columns in a dataset and return the correlation values for the column 'Stress Levels'.
+The .corr() method calculates the pairwise correlation of columns in the dataset. 
+The resulting correlation matrix gives the correlation coefficient between each pair of columns, where 1 indicates a strong positive correlation, 
+-1 indicates a strong negative correlation, and 0 indicates no correlation.
+
+After extracting the data and correlating it we then create a heatmap visualization of the correlation matrix and then select the last column of the 
+correlation matrix (i.e. the correlations with 'Stress Levels') and assign it to correl.
+The sns.heatmap function is from the Seaborn library and is used to visualize the correlation matrix as a heatmap. 
+The values in the correlation matrix are represented as colors, where darker colors indicate higher correlations.
+Finally, correl is returned, which is a Pandas series containing the correlations with 'Stress Levels' for each column in the original dataset.
+
+In this model, we have taken two feature selections. They are:
+
+**SelectKBest**
+
+We use the SelectKBest function from scikit-learn to select the "k" best features from a dataset. 
+The k argument specifies the number of features to be selected, which in this case is set to 4. 
+The fit method is then applied to the training data X_train and the target variable Y_train to compute the scores for each feature using the 
+mutual_info_classif scoring function.
+
+
+**SelectPercentile**
+Secondly for the second feature we then use the SelectPercentile function from scikit-learn to select the top percentile of features from a dataset. 
+The percentile argument specifies the percentile of features to be selected, which in this case is set to 2. 
+The fit method is then applied to the training data X_train and the target variable Y_train to compute the scores for each feature using the 
+mutual_info_classif scoring function.
+
+In both the case we import the AdaBoostClassifier classifier from the sklearn.ensemble module and create an instance of the classifier, 
+which is stored in the variable Model_1. The fit method is then applied to the training data X1_train and the target variable Y1_train to train the classifier.
+The AdaBoost algorithm is a boosting algorithm that combines multiple weak learners to form a strong classifier. 
+The algorithm works by iteratively adding new weak learners to the ensemble, 
+where each new learner focuses on the samples that are misclassified by the previous learners. 
+The final ensemble consists of all the weak learners, and the weights assigned to each learner determine the influence of each learner on the final predictions.
+
+
+On our first attempt to train the data, the accuracy was around 52%. 
+But again classifying the features and then training the data our model prediction performed around 75% which is quite a reasonable number with respect to our dataset.
+
+
+The future scope and usability of stress detection and prediction developed with machine learning are quite promising. 
+In the face of increasing instances of stress, it is becoming increasingly imperative to develop effective stress detection methods. 
+As stress patterns change over time, machine learning is particularly suited for this task because it can identify patterns in large data sets quickly.
+
