@@ -1,1 +1,6 @@
-## Stress is becoming an increasingly significant factor in a person's life today. According to the World Health Organization, stress is a type of mental illness that affects the health of citizens. There is no one in the world who does not suffer from stress or depression. Everyone experiences some amount of stress. Stress is a major symptom of mental health. Stress affects every aspect of a person's life, including emotions, thoughts, and behaviors. This model presents a study of stress detection based on machine learning. 
+# Hexart.In-Task2 
+Stress Detection with Machine Learning. Based on live human vitals, predict the stress levels of humans.
+
+Based on multiple attributes associated with stress, the Machine Learning model is built by looking at the stress levels of 630 individuals.
+This model is based on two features that are used to select the most relevant features from the attributes given in the dataset. Then, it is used to train and test the data to get accuracy. 
+The accuracy of this model is around 75%
