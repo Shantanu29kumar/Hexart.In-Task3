@@ -1,4 +1,4 @@
-# Hexart.In-Task3
+# Stress Detection Using Machine Learning
 Stress Detection with Machine Learning. Based on live human vitals, predict the stress levels of humans.
 
 Based on multiple attributes associated with stress, the Machine Learning model is built by looking at the stress levels of 630 individuals.
